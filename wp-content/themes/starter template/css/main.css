@@ -1,0 +1,63 @@
+
+html{ margin-top: 0 !important; }
+#wpadminbar{ display: none !important; }
+.navbar{ border-radius: 0; margin-bottom: 0; }
+.navbar-inverse .navbar-nav>li>a{ color: #ffffff; }
+
+.invoices-container{  background-color: #f7f8fa; padding: 70px 0; }
+.container{ max-width: 1680px; margin: 0 auto; }
+
+h1{ font-size: 36px; color: #000; margin-bottom: 20px; }
+
+.dataTables_wrapper .dataTables_length{ display: none; }
+
+.wrap-tables .table-tophead{ margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; }
+.wrap-tables .table-tophead .tabbed-box ul li{ display: inline-block; }
+.wrap-tables .table-tophead .tabbed-box ul li a{ font-size: 14px; text-transform: uppercase; color: #6c6f78; text-decoration: none; padding: 5px 7px; border-radius: 5px; }
+.wrap-tables .table-tophead .tabbed-box ul li a:hover, .wrap-tables .table-tophead .tabbed-box ul li a:focus, .wrap-tables .table-tophead .tabbed-box ul li a:active, .wrap-tables .table-tophead .tabbed-box ul li.selected a{ background-color: #6b7483; color: #fff; }
+.wrap-tables .table-tophead .tabbed-box ul li a.selected{ background-color: #6b7483; color: #fff; }
+
+.wrap-tables .table-tophead .fromto-boxes{ width: 490px; display: flex; justify-content: space-between; align-items: center; height: 55px; border: 2px solid #e8e9eb; border-radius: 5px; }
+.wrap-tables .table-tophead .fromto-boxes .lbox{ width: 140px; background-color: #f2f3f5; height: 55px; text-align: center; }
+.wrap-tables .table-tophead .fromto-boxes .lbox span{ padding-left: 8px; display: inline-block; padding-top: 18px; }
+.wrap-tables .table-tophead .fromto-boxes .lbox img{ position: relative; top: 4px; }
+
+.wrap-tables .table-tophead .fromto-boxes .rbox{ display: flex; justify-content: center; width: 70%; }
+.wrap-tables .table-tophead .fromto-boxes .rbox span{ padding: 0 10px; }
+
+.btn-paid a{ background-color: #ff9400; color: #fff; text-decoration: none; padding: 10px 12px; border-radius: 6px; }
+.btn-paid a:hover, .btn-paid a:active, .btn-paid a:focus{ opacity: 0.8; }
+
+.table-tophead ul{ margin: 0; padding-inline-start: 0; }
+.checkbox-all{ text-align: center; }
+.checkbox-all input{ width: 17px; height: 17px; }
+
+.dataTables_filter{ position: absolute; right: 120px; top: -58px; }
+.dataTables_filter input{ padding: 7px !important; }
+.dataTables_filter::before{  background-image: url('../images/img-search-icon.png'); background-repeat: no-repeat; }
+.dataTables_wrapper .dataTables_filter input{ background: #ffffff; outline: none; }
+
+table.dataTable thead th, table.dataTable tfoot th{ color: #6c6f78; font-size: 14px; text-transform: uppercase; font-weight: normal; text-align: left; }
+table.dataTable thead th.sorting img, table.dataTable th.sorting_1 img{ width:20px; }
+table.dataTable.no-footer{ background-color: #fff; border: 1px solid #e6e6e8; border-radius: 10px; }
+table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1, 
+table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1{ background: #fff; }
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd{ background-color: #fff; }
+table.dataTable thead th, table.dataTable thead td{ padding-top: 20px; padding-bottom: 20px; }
+table.dataTable tbody th, table.dataTable tbody td{ padding-top: 15px; padding-bottom: 15px; }
+table.dataTable tbody th, table.dataTable tbody td{ position: relative; font-size: 18px; color: #3a3b3d; }
+table.dataTable tbody th a, table.dataTable tbody td a{ position: absolute; right: 20px; }
+table.dataTable tbody tr{ cursor: pointer; position: relative; }
+table.dataTable tbody tr:hover{ transform: scale(1.05); box-shadow: 0 0 30px rgba(0,0,0,0.4); z-index: 5; }
+table.dataTable thead th, table.dataTable thead td{ border-bottom: 1px solid #e6e6e8; }
+table.dataTable tbody td.select-checkbox:before, table.dataTable tbody td.select-checkbox:after, table.dataTable tbody th.select-checkbox:before, table.dataTable tbody th.select-checkbox:after{ top: 31px; width: 17px; height: 17px; }
+table.dataTable thead .sorting_desc{ background-image: none !important; }
+
+.ongoing-color, .verified-color, .pending-color{ text-transform: uppercase; font-size: 16px; display: inline-block; padding: 6px 10px; border-radius: 25px; }
+.ongoing-color{ background-color: #e6e7eb; }
+.verified-color{ background-color: #51c193; color: #fff; }
+.pending-color{ background-color: #ffa323; color: #fff; }
+
+@media(min-width: 1600px){
+	.container{ width: 1680px; }
+}
