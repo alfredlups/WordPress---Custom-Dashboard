@@ -14,20 +14,6 @@
 
 get_header();
 ?>
-	
-<?php 
-    $query = new WP_Query( array(
-        'post_type' => 'invoice',
-        'fields' => 'ids',
-        'post_status' => 'publish',
-        'posts_per_page' => -1
-    ));
-    while ($query->have_posts()) : $query->the_post();
-?>
-	<div>
-		<h1><?= the_title(); ?></h1>
-	</div>
-<?php endwhile; wp_reset_postdata(); ?>
 
 	<div class="invoices-container">
         <div class="container">
@@ -69,138 +55,41 @@ get_header();
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Jade Phoenix Buffet</td>
-                            <td><span class="ongoing-color">Ongoing</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Yummy Lake Pagoda</td>
-                            <td><span class="verified-color">Verified</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Asian Dragon Harbin Hui</td>
-                            <td><span class="verified-color">Ongoing</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Jade Phoenix Buffet</td>
-                            <td><span class="pending-color">Pending</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Jade Phoenix Buffet</td>
-                            <td><span class="verified-color">Ongoing</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Jade Phoenix Buffet</td>
-                            <td><span class="verified-color">Ongoing</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Jade Phoenix Buffet</td>
-                            <td><span class="verified-color">Ongoing</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Jade Phoenix Buffet</td>
-                            <td><span class="ongoing-color">Ongoing</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Jade Phoenix Buffet</td>
-                            <td><span class="verified-color">Ongoing</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Jade Phoenix Buffet</td>
-                            <td><span class="pending-color">Ongoing</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
-                        <tr>
-                        	<td></td>
-                            <td>#23122</td>
-                            <td><span><img src="<?php echo get_template_directory_uri(); ?>/images/img-invoices-images.jpg"></span> Jade Phoenix Buffet</td>
-                            <td><span class="verified-color">Ongoing</span></td>
-                            <td>16/08/2018</td>
-                            <td>16/08/2018</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>HK$2.99</td>
-                            <td>20 <a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
-                        </tr>
+                        <?php 
+                            $query = new WP_Query( array(
+                                'post_type' => 'invoices',
+                                'fields' => 'ids',
+                                'post_status' => 'publish',
+                                'posts_per_page' => -1
+                            ));
+                            while ($query->have_posts()) : $query->the_post(); 
+                                $featured_post = get_field('inv_restaurant');
+                                $restaurant_image = get_field('restaurant_image', $featured_post->ID)['url'];
+                                $status = get_field('inv_status');
+                                if( $status == 'On Going' ):
+                                    $status_class = "ongoing-color";
+                                elseif( $status == 'Verified' ):
+                                    $status_class = "verified-color";
+                                elseif( $status == 'Pending' ):
+                                    $status_class = "pending-color";
+                                else:
+                                    $status_class = "paid-color";
+                                endif;
+
+                        ?>
+                                <tr>
+                                	<td></td>
+                                    <td><?php the_ID(); ?></td>
+                                    <td><span><img src="<?php echo $restaurant_image; ?>"></span> <?php echo $featured_post->post_title; ?></td>
+                                    <td><span class="<?php echo $status_class; ?>"><?php echo $status; ?></span></td>
+                                    <td><?php echo get_field('inv_start_date'); ?></td>
+                                    <td><?php echo get_field('inv_end_date'); ?></td>
+                                    <td><?= the_field('inv_total'); ?></td>
+                                    <td><?= the_field('inv_fees'); ?></td>
+                                    <td><?= the_field('inv_transfer'); ?></td>
+                                    <td><?= the_field('inv_orders'); ?><a href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/images/img-download.png" alt="download"></a></td>
+                                </tr>
+                            <?php endwhile; ?>
                     </tbody>
                 </table>
             </div>

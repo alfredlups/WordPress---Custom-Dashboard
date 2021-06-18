@@ -39,4 +39,11 @@ $(document).ready(function(){
 	        $("th.select-checkbox").addClass("selected");
 	    }
 	});
+
+
+	$.getJSON( "http://localhost/wordpress/test/wp-json/wp/v2/movies", function( data ) {
+	  	console.log(data)
+	  	console.log(data[0].slug)
+	});
+
 });

@@ -53,10 +53,11 @@ table.dataTable thead th, table.dataTable thead td{ border-bottom: 1px solid #e6
 table.dataTable tbody td.select-checkbox:before, table.dataTable tbody td.select-checkbox:after, table.dataTable tbody th.select-checkbox:before, table.dataTable tbody th.select-checkbox:after{ top: 31px; width: 17px; height: 17px; }
 table.dataTable thead .sorting_desc{ background-image: none !important; }
 
-.ongoing-color, .verified-color, .pending-color{ text-transform: uppercase; font-size: 16px; display: inline-block; padding: 6px 10px; border-radius: 25px; }
+.ongoing-color, .verified-color, .pending-color, .paid-color{ text-transform: uppercase; font-size: 16px; display: inline-block; padding: 6px 10px; border-radius: 25px; }
 .ongoing-color{ background-color: #e6e7eb; }
 .verified-color{ background-color: #51c193; color: #fff; }
 .pending-color{ background-color: #ffa323; color: #fff; }
+.paid-color{ background-color: #e5e5e5; color: #fff; }
 
 @media(min-width: 1600px){
 	.container{ width: 1680px; }
