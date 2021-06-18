@@ -28,6 +28,9 @@ h1{ font-size: 36px; color: #000; margin-bottom: 20px; }
 .btn-paid a{ background-color: #ff9400; color: #fff; text-decoration: none; padding: 10px 12px; border-radius: 6px; }
 .btn-paid a:hover, .btn-paid a:active, .btn-paid a:focus{ opacity: 0.8; }
 
+.table-dates{ position: absolute; background: #fff; }
+.table-dates input{ width: 120px; padding: 7px; border: none; outline: none; }
+
 .table-tophead ul{ margin: 0; padding-inline-start: 0; }
 .checkbox-all{ text-align: center; }
 .checkbox-all input{ width: 17px; height: 17px; }
@@ -58,7 +61,14 @@ table.dataTable thead .sorting_desc{ background-image: none !important; }
 .verified-color{ background-color: #51c193; color: #fff; }
 .pending-color{ background-color: #ffa323; color: #fff; }
 .paid-color{ background-color: #e5e5e5; color: #fff; }
+.bg-gray{ background: #f2f1f5; padding: 9px; }
+.bg-gray img{ width: 20px; }
 
 @media(min-width: 1600px){
-	.container{ width: 1680px; }
+	.container{ width: 1600px; }
+	.table-dates{ right: 30% !important; }
+}
+
+@media(min-width: 1200px){
+	.table-dates{ right: 35%; }
 }

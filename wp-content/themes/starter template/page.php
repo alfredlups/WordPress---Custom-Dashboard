@@ -29,13 +29,22 @@ get_header();
                             <li><a href="javascript:;">Pending</a></li>
                         </ul>
                     </div>
-
-                   <div class="btn-paid">
+                    <div class="table-dates">
+                        <div class="lbox">
+                            <span class="bg-gray">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/img-calendar.png" align="calendar"> <span>From</span>
+                            </span>
+                            <input type="text" id="min" name="min" placeholder="25/06/2021">
+                            <span><img src="<?php echo get_template_directory_uri(); ?>/images/img-arrow-icon.png"></span>
+                            <input type="text" id="max" name="max" placeholder="30/06/2021">
+                        </div>
+                    </div>
+                    <div class="btn-paid">
                         <a href="javascript:;">Mark as Paid</a>
                     </div>
                 </div>
 
-                <table id="" class="display" style="width:100%">
+                <table class="display" style="width:100%">
                     <thead>
                         <tr>
                         	<th> 

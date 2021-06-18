@@ -26,16 +26,21 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/datetime/1.1.0/css/dataTables.dateTime.min.css">
 	<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri(); ?>/css/main.css" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php 
+	global $current_user; wp_get_current_user(); 
+?>
 <div id="page" class="site">
 	<nav class="navbar navbar-inverse">
 		<div class="container">
 		  <ul class="nav navbar-nav">
-		    <li><a href="#">Dashboard</a></li>
+		    <li><a href="<?php echo site_url().'/dashboard'; ?>">Dashboard</a></li>
 		    <li><a href="#">Coupons</a></li>
 		    <li><a href="#">Invoices</a></li>
 		    <li><a href="#">Restaurants</a></li>
@@ -43,7 +48,7 @@
 		    <li><a href="#">Orders</a></li>
 		  </ul>
 		  <ul class="nav navbar-nav navbar-right">
-		      <li><a href="#">User</a></li>
+		      <li><a href="#"><?php echo $current_user->display_name; ?></a></li>
 		   </ul>
 		</div>   
 	</nav>

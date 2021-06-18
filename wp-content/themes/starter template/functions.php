@@ -207,6 +207,13 @@ function yoast_no_home_noindex($string= "") {
 }
 
 
+function admin_default_page() {
+  return site_url();
+}
+
+add_filter('login_redirect', 'admin_default_page');
+
+
 // remove emoji
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );  
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' ); 
